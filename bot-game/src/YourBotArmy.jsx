@@ -1,10 +1,10 @@
 import React from 'react';
 import BotProfile from './BotProfile';
+import './YourBotArmy'
 
 function YourBotArmy({ army, removeFromArmy, dischargeBot }) {
   return (
     <div>
-      <h2>Your Bot Army</h2>
       <div className="bot-list">
         {army && army.length > 0 ? (
           army.map((bot) => (
@@ -14,9 +14,7 @@ function YourBotArmy({ army, removeFromArmy, dischargeBot }) {
               <button onClick={() => dischargeBot(bot)}>Discharge</button>
             </div>
           ))
-        ) : (
-          <p>Your army is empty.</p>
-        )}
+        ) : null}
       </div>
     </div>
   );

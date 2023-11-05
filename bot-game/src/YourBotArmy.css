@@ -1,0 +1,83 @@
+/* YourBotArmy.css */
+
+/* Style the entire YourBotArmy component */
+.bot-army-container {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  
+  /* Style the "Your Bot Army" heading */
+  .bot-army-heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Style the bot list */
+  .bot-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  /* Style individual bot items in the army */
+  .army-bot {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 200px; /* Adjust the width as needed */
+  }
+  
+  /* Style bot image */
+  .bot-image {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Style bot name */
+  .bot-name {
+    font-weight: bold;
+  }
+  
+  /* Style the buttons */
+  .action-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  /* Style the release and discharge buttons */
+  .action-button {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Style the release button */
+  .release-button {
+    background-color: #e74c3c;
+  }
+  
+  /* Style the discharge button */
+  .discharge-button {
+    background-color: #3498db;
+  }
+  
+  /* Hover styles for buttons */
+  .action-button:hover {
+    background-color: #c0392b;
+  }
+  
+  /* Hover styles for the discharge button */
+  .discharge-button:hover {
+    background-color: #2980b9;
+  }
+  

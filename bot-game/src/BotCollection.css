@@ -55,3 +55,13 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+.selected-bots-container {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto; /* Add this to enable horizontal scrolling if needed */
+}
+
+.army-bot {
+  margin-right: 10px; /* Add some spacing between the bots */
+}

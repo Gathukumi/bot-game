@@ -1,5 +1,5 @@
 import React from 'react';
-import './BotProfile.css'
+import './BotProfile.css';
 
 function BotProfile({ bot }) {
   return (

@@ -27,8 +27,8 @@ function App() {
   return (
     <div>
       <h1>Bot Battlr</h1>
-      <BotCollection addToArmy={addToArmy} />
       <YourBotArmy army={army} removeFromArmy={removeFromArmy} dischargeBot={dischargeBot} />
+      <BotCollection addToArmy={addToArmy} />
     </div>
   );
 }
