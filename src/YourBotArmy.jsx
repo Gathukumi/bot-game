@@ -1,6 +1,7 @@
 import React from 'react';
 import BotProfile from './BotProfile';
 import './YourBotArmy'
+import './YourBotArmy.css'
 
 function YourBotArmy({ army, removeFromArmy, dischargeBot }) {
   return (

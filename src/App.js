@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import BotCollection from './BotCollection';
 import YourBotArmy from './YourBotArmy';
-import './App.css';
 
 function App() {
   const [army, setArmy] = useState([]);
@@ -20,9 +19,17 @@ function App() {
 
   // Function to discharge a bot
   const dischargeBot = (bot) => {
-    // Implement the discharge logic here
-    // You can remove the bot from the army or perform any other action
+    setArmy(army.filter((b) => b !== bot));
   };
+
+  // Example of using useEffect to fetch data when the component mounts
+  useEffect(() => {
+    // Fetch data here
+    // For example:
+    // fetchData().then((data) => {
+    //   setSomeData(data);
+    // });
+  }, []); // Empty dependency array means this effect runs only once, when the component mounts
 
   return (
     <div>

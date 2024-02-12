@@ -8,7 +8,7 @@ function BotCollection() {
   useEffect(() => {
     async function fetchBots() {
       try {
-        const response = await fetch('http://localhost:3000/bots');
+        const response = await fetch('http://localhost:3001/bots');
         const data = await response.json();
         setBots(data);
       } catch (error) {
@@ -19,7 +19,7 @@ function BotCollection() {
   }, []);
 
   const handleEnlist = (bot) => {
-    fetch(`http://localhost:3000/bots/${bot.id}`, {
+    fetch(`http://localhost:3001/bots/${bot.id}`, {
       method: 'DELETE',
     })
       .then(response => response.json())
